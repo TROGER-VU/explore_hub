@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Explore Hub: The CS Innovation Gallery
 
-## Getting Started
+**Explore Hub** is a collaborative ecosystem designed specifically for Computer Science students. It bridges the gap between solo coding and community contribution by providing a structured space to browse, showcase, and collaborate on software projects.
 
-First, run the development server:
+---
 
+## ✨ Features
+
+* **🔍 Advanced Discovery:** Filter projects by domain (AI/ML, Web Dev, Cybersecurity), difficulty level, and specific tech stacks.
+* **✍️ Smart Upload Wizard:** A multi-step form with **AI-powered description assistance** to help users document their work professionally.
+* **🤝 Collaboration First:** "Help Wanted" tags and integrated contributor tools to encourage peer-to-peer learning.
+* **📱 Modern UI/UX:** A high-performance, responsive interface built with Next.js 14, Tailwind CSS, and Radix UI primitives.
+* **🛡️ Type Safe:** Fully architected with TypeScript for robust development and scalability.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Framework:** [Next.js 14](https://nextjs.org/) (App Router)
+* **Language:** [TypeScript](https://www.typescriptlang.org/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Components:** [shadcn/ui](https://ui.shadcn.com/) (Radix UI + Lucide Icons)
+* **Form Handling:** React Hook Form + Zod Validation
+* **Animations:** Framer Motion
+
+---
+
+## 🏗️ Architecture Overview
+
+The project follows a modular "feature-first" architecture to ensure that the UI and logic remain decoupled.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+* Node.js 18.17 or later
+* npm, yarn, or pnpm
+
+### Installation
+
+1. **Clone the repository**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/explore_hub.git
+cd explore_hub
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Install dependencies**
+```bash
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+3. **Run the development server**
+```bash
+npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+4. **Open the application**
+Navigate to [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000) to see the result.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📂 Project Structure
+
+```text
+├── app/              # Next.js App Router (Pages & API)
+├── components/       # Reusable UI components (Navbar, Sidebar, Cards)
+├── lib/              # Utility functions and mock data
+├── types/            # Global TypeScript interfaces
+├── public/           # Static assets (images, icons)
+└── styles/           # Global CSS and Tailwind configurations
+
+```
+
+---
+
+## 🗺️ Roadmap
+
+* [ ] **Phase 2:** Integrate Supabase/Prisma for real-time database persistence.
+* [ ] **Phase 3:** Implement NextAuth.js for GitHub/Google authentication.
+* [ ] **Phase 4:** Add an AI-powered project recommendation engine.
+* [ ] **Phase 5:** Real-time chat for collaboration requests.
+
+---
+
+## 🤝 Contributing
+
+We love contributions! Whether you're fixing a bug, adding a feature, or improving documentation:
+
+1. Fork the Project.
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the Branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
+
+---
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+**Developed with ❤️ by Ayush**
