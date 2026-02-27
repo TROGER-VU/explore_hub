@@ -39,7 +39,7 @@ const MENU_GROUPS: MenuGroup[] = [
       {
         label: "All Projects",
         icon: LayoutGrid,
-        href: "/",
+        href: "/dashboard",
       },
       {
         label: "Trending",
@@ -47,11 +47,11 @@ const MENU_GROUPS: MenuGroup[] = [
         href: "/trending",
         badge: "Hot",
       },
-    //   {
-    //     label: "Hackathons",
-    //     icon: Trophy,
-    //     href: "/hackathons",
-    //   },
+      //   {
+      //     label: "Hackathons",
+      //     icon: Trophy,
+      //     href: "/hackathons",
+      //   },
     ],
   },
   {
