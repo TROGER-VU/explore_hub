@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Sidebar } from "@/components/Sidebar";
+import { ClientLayoutWrapper } from "@/components/ClientLayoutWrapper";
 import { Inter } from "next/font/google"
 
 const geistSans = Geist({
@@ -33,13 +34,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${inter.className} bg-gray-900 min-h-screen font-sans text-slate-50 antialiased selection:bg-blue-500/30`}>
-        <Navbar />
-        <div className="flex max-w-[1600px] mx-auto">
-          <Sidebar />
-          <main className="flex-1 min-w-0 border-l border-slate-800/50">
-             {children}
-          </main>
-        </div>
+        <ClientLayoutWrapper>
+          {children}
+        </ClientLayoutWrapper>
       </body>
     </html>
   );
