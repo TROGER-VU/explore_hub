@@ -12,6 +12,7 @@ interface ProfileHeaderProps {
         bio: string;
         location: string;
         avatarUrl?: string; // Optional for future use
+        portfolioUrl?: string;
     };
 }
 
@@ -49,10 +50,12 @@ export function ProfileHeader({ user }: ProfileHeaderProps) {
                         <MapPin className="w-4 h-4 text-slate-500" />
                         {user.location}
                     </div>
-                    <a href="#" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
-                        <LinkIcon className="w-4 h-4 text-slate-500" />
-                        Portfolio Portfolio
-                    </a>
+                    {user.portfolioUrl && (
+                        <a href={user.portfolioUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                            <LinkIcon className="w-4 h-4 text-slate-500" />
+                            Portfolio
+                        </a>
+                    )}
                 </div>
             </CardContent>
         </Card>

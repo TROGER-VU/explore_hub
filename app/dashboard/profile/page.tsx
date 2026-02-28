@@ -15,6 +15,7 @@ const DUMMY_USER = {
     avatarUrl: "/pfp.jpg",
     bio: "Building scalable web applications and collaborative platforms. Open-source enthusiast and constant learner.",
     location: "India",
+    portfolioUrl: "https://github.com/dayfall00",
     stats: {
         projects: 12,
         contributions: 342,

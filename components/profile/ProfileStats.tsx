@@ -13,11 +13,13 @@ interface ProfileStatsProps {
 }
 
 export function ProfileStats({ stats }: ProfileStatsProps) {
+    const safeStats = stats || { projects: 0, contributions: 0, followers: 0, following: 0 };
+
     const statItems = [
-        { label: "Projects", value: stats.projects, icon: FolderGit2, color: "text-blue-400" },
-        { label: "Contributions", value: stats.contributions, icon: GitCommit, color: "text-green-400" },
-        { label: "Followers", value: stats.followers, icon: Users, color: "text-purple-400" },
-        { label: "Following", value: stats.following, icon: UserPlus, color: "text-orange-400" },
+        { label: "Projects", value: safeStats.projects ?? 0, icon: FolderGit2, color: "text-blue-400" },
+        { label: "Contributions", value: safeStats.contributions ?? 0, icon: GitCommit, color: "text-green-400" },
+        { label: "Followers", value: safeStats.followers ?? 0, icon: Users, color: "text-purple-400" },
+        { label: "Following", value: safeStats.following ?? 0, icon: UserPlus, color: "text-orange-400" },
     ];
 
     return (
